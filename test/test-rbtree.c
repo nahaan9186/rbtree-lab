@@ -6,6 +6,7 @@
 
 // new_rbtree should return rbtree struct with null root node
 void test_init(void) {
+  printf("\nrbtree creation start\n");
   rbtree *t = new_rbtree();
   assert(t != NULL);
 #ifdef SENTINEL
