@@ -19,6 +19,7 @@ void test_init(void) {
 }
 
 // root node should have proper values and pointers
+// test_insert_single(1024);
 void test_insert_single(const key_t key) {
   rbtree *t = new_rbtree();
   node_t *p = rbtree_insert(t, key);
@@ -56,6 +57,7 @@ void test_find_single(const key_t key, const key_t wrong_key) {
 }
 
 // erase should delete root node
+// test_erase_root(128);
 void test_erase_root(const key_t key) {
   rbtree *t = new_rbtree();
   node_t *p = rbtree_insert(t, key);
@@ -376,13 +378,20 @@ int main(int argc, char *argv[]) {
     printf("test_insert_single is done\n");
     test_find_single(512, 1024);
     printf("test_find_single is done\n");
-    // test_erase_root(128);
+    test_erase_root(128);
+    printf("test_erase_root is done\n");
     // test_find_erase_fixed();
+    // printf("test_find_erase_fixed is done\n");
     // test_minmax_suite();
+    // printf("test_minmax_suite is done\n");
     // test_to_array_suite();
+    // printf("test_to_array_suite is done\n");
     // test_distinct_values();
+    // printf("test_distinct_values is done\n");
     // test_duplicate_values();
+    // printf("test_duplicate_values is done\n");
     // test_multi_instance();
+    // printf("test_multi_instance is done\n");
     // test_find_erase_rand(10000, 17);
     printf("Passed all tests!\n");
 }
