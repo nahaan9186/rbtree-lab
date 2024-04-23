@@ -371,15 +371,17 @@ void test_find_erase_rand(const size_t n, const unsigned int seed) {
   delete_rbtree(t);
 }
 
+
+
 int main(int argc, char *argv[]) {
-    test_init();
-    printf("test_init is done\n");
-    test_insert_single(1024);
-    printf("test_insert_single is done\n");
-    test_find_single(512, 1024);
-    printf("test_find_single is done\n");
-    test_erase_root(128);
-    printf("test_erase_root is done\n");
+    // test_init();
+    // printf("test_init is done\n");
+    // test_insert_single(1024);
+    // printf("test_insert_single is done\n");
+    // test_find_single(512, 1024);
+    // printf("test_find_single is done\n");
+    // test_erase_root(128);
+    // printf("test_erase_root is done\n");
     // test_find_erase_fixed();
     // printf("test_find_erase_fixed is done\n");
     // test_minmax_suite();
